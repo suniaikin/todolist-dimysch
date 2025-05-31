@@ -11,7 +11,6 @@ type PropType = {
 	tasks: Array<TaskType>
 }
 
-
 export function Todolist(props: PropType) {
 	return (
 		<div>
