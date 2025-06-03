@@ -1,12 +1,99 @@
 .App {
-    padding: 30px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .App > div {
-    margin-right: 50px;
-
+    border: 1px solid #fff;
+    padding: 0px 30px 30px 30px;
+    border-radius: 10px;
 }
+
+h3,
+input {
+    padding: 20px 0 0 0;
+}
+
 ul {
     list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+li > span {
+    display: inline-block;
+    margin-right: auto;
+    align-items: center;
+}
+
+input {
+    margin: 5px 0;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+input:active {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+    background-color: #00ffea;
+}
+
+.buttonAdd {
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 30%;
+    margin-left: 5px;
+}
+
+.buttonDelete {
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: 200ms;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 2px;
+    font-size: 7px;
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+}
+
+.buttonDelete:hover {
+    color: red;
+}
+
+.areaFilter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+button,
+input {
+    cursor: pointer;
+}
+
+.buttonFilter {
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 10px;
+    margin: 2px;
 }
