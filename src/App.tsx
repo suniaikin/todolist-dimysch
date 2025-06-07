@@ -26,7 +26,7 @@ function App() {
             taskTitle: taskTitle,
             isDone: false,
         };
-        let newTasks = [newTask, ...tasks];
+        let newTasks: TaskType[] = [...tasks, newTask];
         setTasks(newTasks);
     }
 
